@@ -39,8 +39,11 @@
   <br>
     <form id="newform" >
     <input type="text" name="new" placeholder="enter"> 
+      <br>
      <input type="email" name="email" placeholder="enter email">
-      <input type="password" name="password" placeholder="enter password"
+      <br>
+      <input type="password" name="password" placeholder="enter password">
+      
       <br>
   <button> submit</button>
     </form>
@@ -77,7 +80,7 @@ form.addEventListener("submit", function(e) {
   }
 
   // Send to Google Sheets Web App
-  fetch("https://script.google.com/macros/s/AKfycbwPFoM3LyBBckgDIJAQRoGWLxkbIQVZPzBuFlckyAmIe3vJLLbdJGLgdcwiUubwHqO4/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" }
