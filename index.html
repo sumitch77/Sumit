@@ -23,7 +23,8 @@
   <a id="pred" href="hello.html">Next day predictor</a>
   
   <footer>
-  
+    <br>
+    <a href="https://sumitch77.github.io/Tourism-/">Click</a>
    <br>
     owner -
     <br>
@@ -88,7 +89,7 @@ form.addEventListener("submit", function(e) {
   }
 
   // Send data to your Google Sheets Web App
-  fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwLkz2MwacMWLOB2FYxupBNhAVx6gLqQJ71G03pyeyCoswV5vADxleif9waLQSlp8gd/exec", {
     method: "POST",
   mode: "no-cors",   // no-cors mode avoids preflight
   headers: { "Content-Type": "text/plain" },
@@ -96,7 +97,7 @@ form.addEventListener("submit", function(e) {
   })
   .then(res => res.text())
   .then(response => {
-    alert("Submitted successfully!");
+    alert("submitted");
     form.reset();
   })
   .catch(err => console.error(err));
