@@ -1,0 +1,275 @@
+#main{
+  border: 1px solid black;
+  height : 580px;
+  width : 650px;
+  background-color: black;
+  display: flex;
+  border-radius: 12%;
+}
+#result{
+  height: 150px;
+  width: 100vw;
+  background-color: black;
+  border: 1px solid black;
+  font-size: 30px;
+  display: flex;
+  border-radius: 10%;
+  color:white;
+  
+}
+
+
+#one{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 300px;
+  right : 810px;
+}
+#two{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 300px;
+  right : 655px;
+}
+#three{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 300px;
+  right : 500px;
+}
+#four{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 385px;
+  right : 810px;
+}
+#five{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 385px;
+  right : 655px;
+}
+#six{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 385px;
+  right : 500px;
+}
+#seven{
+display: inline-block;
+  flex-basis: 0;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 470px;
+  right : 810px;
+}
+#eight{
+display: inline-block;
+  flex-basis: 0;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 470px;
+  right : 655px;
+}
+#nine{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top : 470px;
+  right : 500px;
+}
+#zero{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+position: absolute;
+  top : 560px;
+  right : 810px;
+}
+#cut{
+display: inline-block;
+  flex-basis: 30;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 50px;
+position: absolute;
+  top : 560px;
+  right : 655px;
+}
+
+#add{
+display: inline-block;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 300px;
+  right:345px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 40px;
+}
+#sub{
+display: inline-block;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 385px;
+  right:345px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 60px;
+}
+#mul{
+display: inline-block;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 470px;
+  right:345px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 40px;
+}
+#div{
+display: inline-block;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 555px;
+  right:345px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 40px;
+}
+
+#ans{
+display: inline-block;
+  border: 1px solid black;
+  height:80px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 555px;
+  right:500px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 40px;
+}
+#all{
+display: inline-block;
+  border: 1px solid black;
+  height:60px;
+  width: 150px;
+  border-radius: 20%;
+  position : absolute;
+  top: 235px;
+  right:345px;
+  background-color: lightblue;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 40px;
+}
+
+#input{
+  font-size: 40px;
+}
+#show{
+  background-color: black;
+  color : white;
+  width: 60vw;
+  font-size: 50px;
+}
+#calculate{
+  font-size: 30px;
+}
+
