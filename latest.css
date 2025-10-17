@@ -1,265 +1,237 @@
 #main{
   border: 1px solid black;
   height : 580px;
-  width : 650px;
+  width : 500px;
   background-color: black;
-  display: flex;
   border-radius: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #result{
   height: 150px;
-  width: 100vw;
+  width: 400px;
   background-color: black;
   border: 1px solid black;
   font-size: 30px;
-  display: flex;
   border-radius: 10%;
   color:white;
+  margin-top: 10px;
+  margin-left: 40px;
   
 }
 
-
-#one{
-display: inline-block;
-  flex-basis: 30;
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero{
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 300px;
-  right : 810px;
+  justify-content: center;
+  
+  
 }
+/*
 #two{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 300px;
-  right : 655px;
+  
 }
 #three{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 300px;
-  right : 500px;
+  
 }
 #four{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 385px;
-  right : 810px;
+  
 }
 #five{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 385px;
-  right : 655px;
+  
 }
 #six{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 385px;
-  right : 500px;
+  
 }
 #seven{
-display: inline-block;
-  flex-basis: 0;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 470px;
-  right : 810px;
+  
 }
 #eight{
-display: inline-block;
-  flex-basis: 0;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 470px;
-  right : 655px;
+  
 }
 #nine{
-display: inline-block;
-  flex-basis: 30;
+
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-  position: absolute;
-  top : 470px;
-  right : 500px;
+  
 }
 #zero{
-display: inline-block;
-  flex-basis: 30;
   border: 1px solid black;
   height:80px;
-  width: 150px;
+  width: 100px;
   background-color: yellow;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 50px;
-position: absolute;
-  top : 560px;
-  right : 810px;
-}
-#cut{
-display: inline-block;
-  flex-basis: 30;
-  border: 1px solid black;
-  height:80px;
-  width: 150px;
-  background-color: lightblue;
-  border-radius: 20%;
-  text-align: center;
-  font-size: 50px;
-position: absolute;
-  top : 560px;
-  right : 655px;
-}
 
-#add{
-display: inline-block;
+}
+*/
+#cut,#add,#sub,#mul,#div,#ans,#square,#bracket,#cbracket{
   border: 1px solid black;
-  height:80px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 300px;
-  right:345px;
+  height:60px;
+  width: 100px;
   background-color: lightblue;
-  border-radius: 20%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 50px;
+
+}
+#all{
+  border: 1px solid black;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 40px;
+  align-self: flex-end;
+}
+/*
+#add{
+  border: 1px solid black;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
   text-align: center;
   font-size: 40px;
 }
 #sub{
-display: inline-block;
+
   border: 1px solid black;
-  height:80px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 385px;
-  right:345px;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
   background-color: lightblue;
-  border-radius: 20%;
   text-align: center;
   font-size: 60px;
 }
 #mul{
-display: inline-block;
   border: 1px solid black;
-  height:80px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 470px;
-  right:345px;
+  height:60px;
+  width: 100px;
   background-color: lightblue;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 40px;
 }
 #div{
-display: inline-block;
   border: 1px solid black;
-  height:80px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 555px;
-  right:345px;
+  height:60px;
+  width: 100px;
   background-color: lightblue;
-  border-radius: 20%;
+  border-radius: 50%;
   text-align: center;
   font-size: 40px;
 }
 
 #ans{
-display: inline-block;
-  border: 1px solid black;
-  height:80px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 555px;
-  right:500px;
-  background-color: lightblue;
-  border-radius: 20%;
-  text-align: center;
-  font-size: 40px;
-}
-#all{
-display: inline-block;
   border: 1px solid black;
   height:60px;
-  width: 150px;
-  border-radius: 20%;
-  position : absolute;
-  top: 235px;
-  right:345px;
+  width: 100px;
+  border-radius: 50%;
   background-color: lightblue;
-  border-radius: 20%;
   text-align: center;
   font-size: 40px;
 }
 
+#square{
+  
+  border: 1px solid black;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 40px;
+  
+}
+#bracket{
+  
+  border: 1px solid black;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+#cbracket{
+  border: 1px solid black;
+  height:60px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 40px;
+  
+}
+*/
+
+/* 2nd calculator */
 #input{
   font-size: 40px;
 }
