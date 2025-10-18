@@ -7,6 +7,7 @@ let ope = document.querySelectorAll(".ope");
 let ans = document.querySelector("#ans");
 let all = document.querySelector("#all");
 let final = document.querySelector("#final");
+let input= document.querySelector("#input"); 
 
 a.forEach(numb => {
    numb.addEventListener("click",() =>{
@@ -30,6 +31,7 @@ ope.forEach(op=>{
 
 cut.addEventListener("click", () =>{
    r.innerText = r.innerText.slice(0,-1);
+   input.value=input.value.slice(0,-1);
    cut.style.opacity="0.5";
       setTimeout(() => {
       cut.style.opacity = "1";
@@ -51,10 +53,11 @@ all.addEventListener("click",() =>{
       all.style.opacity = "1";
     }, 80);
    r.innerText="";
+   input.value="";
    
 });
 
-let input= document.querySelector("#input");       
+      
 let cal= document.querySelector("#calculate");
 let show= document.querySelector("#show");
 
