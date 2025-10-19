@@ -1,14 +1,14 @@
 let name = document.querySelector("#username");          
 let pass = document.querySelector("#password");
-let submit = document.querySelector("#login");  
-let form = document.querySelector("#form");
+let submit = document.querySelector("#login");
  let wrong = document.querySelector("#wrong");
-let nuser= localStorage.getItem("username");
-  let npass = localStorage.getItem("password")
 
 
 submit.addEventListener("click",(e)=>{
     e.preventDefault();
+  
+  let nuser= localStorage.getItem("username");
+  let npass = localStorage.getItem("password");
     let a = name.value;
     let b= pass.value;
     
@@ -16,31 +16,31 @@ submit.addEventListener("click",(e)=>{
     
   localStorage.setItem("username",name.value);
     localStorage.setItem("password",pass.value);
-        window.location.href="https://sumitch77.github.io/Tourism-/";
+        window.location.href="indexm.html";
     }
   
   
   else if(nuser===a && npass===b){
-    window.location.href="https://sumitch77.github.io/Tourism-/";
+    
+    window.location.href="indexm.html";
   }
   
   
     else{
-    let c= localStorage.getItem("username");
+   /* let c= localStorage.getItem("username");
         let d = localStorage.getItem("password");
         if (c==="" && d===""){
           name.value="";
-          pass.value="";
+          pass.value=""; }*/
           wrong.style.display="block";
         }
-   
-    }
+  
 });
 
 
 let create = document.querySelector("#create");
 
 create.addEventListener("click" , ()=>{
-  window.location.href="https://sumitch77.github.io/Tourism-/";
+  window.location.href="signup.html";
   
 }); 
