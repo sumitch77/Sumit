@@ -224,7 +224,12 @@ let pass = localStorage.getItem("password");
 if(user==="Sumit" && pass==="6969" ){
     heading.innerText=" welcome Owner";
 }
-
+else if(user==="Vinay"){
+    heading.innerText="wecome Bhadwa";
+}
+else{
+    heading.innerText=user;
+}
 
   
   
