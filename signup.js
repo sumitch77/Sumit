@@ -1,7 +1,8 @@
 let create = document.querySelector("#login1");
 let name1 = document.querySelector("#username");
 let pass1 = document.querySelector("#password");
-
+let name1="";
+let pass1="";
 create.addEventListener("click", (e) =>{
     e.preventDefault();
     if(name1==="" && pass1===""){
