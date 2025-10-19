@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: white;
+  color: #333;
+}
+
+header {
+  background-color: green;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.festival {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2rem;
+}
+
+.text h2 {
+  color: #6b4f3f;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.viewer {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

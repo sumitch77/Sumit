@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tribal Festivals of Jharkhand</title>
+  <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+  <header>
+    <h1>Tribal Festivals of Jharkhand</h1>
+    <p>Explore the vibrant cultural tapestry through Sarhul, Karma, Sohrai, and more.</p>
+  </header>
+
+  <section class="festival">
+    <div class="text">
+      <h2>Sarhul</h2>
+      <p>
+        Sarhul is one of the most significant tribal festivals in Jharkhand, celebrated by the Oraon, Munda, and Ho tribes. It marks the arrival of spring and the worship of nature, especially the Sal tree. Villagers offer flowers to their deities and perform traditional dances and songs to express gratitude for the bounty of nature. The festival also symbolizes the bond between humans and the environment, with rituals that invoke blessings for a prosperous year ahead.
+      </p>
+    </div>
+    <div class="viewer" id="viewer-sarhul">
+      <img src="">
+      <!-- Add your 360° image viewer here -->
+    </div>
+  </section>
+
+  <section class="festival">
+    <div class="text">
+      <h2>Karma</h2>
+      <p>
+        Karma is a festival of joy, unity, and reverence for the Karma tree. Celebrated by various tribal communities, it involves the worship of the tree as a symbol of life and fertility. Young men and women dress in traditional attire and perform the Karma dance in circles, accompanied by rhythmic drumming and singing. The festival is deeply rooted in the belief that the Karma tree brings good fortune, and its celebration strengthens community bonds and cultural identity.
+      </p>
+    </div>
+    <div class="viewer" id="viewer-karma">
+      <!-- Add your 360° image viewer here -->
+    </div>
+  </section>
+
+  <section class="festival">
+    <div class="text">
+      <h2>Sohrai</h2>
+      <p>
+        Sohrai is a harvest festival celebrated during Diwali by the Santhal, Munda, and other tribes. It honors cattle and agricultural prosperity. Homes are adorned with stunning wall paintings using natural pigments, depicting animals, plants, and tribal motifs. Women play a central role in decorating and performing rituals. The festival reflects gratitude for livestock and crops, and showcases the artistic brilliance of tribal communities through vibrant murals and ceremonial dances.
+      </p>
+    </div>
+    <div class="viewer" id="viewer-sohrai">
+      <!-- Add your 360° image viewer here -->
+    </div>
+  </section>
+
+  <section class="festival">
+    <div class="text">
+      <h2>Jani-Shikar</h2>
+      <p>
+        Jani-Shikar is a unique festival celebrated by tribal women to commemorate their historical resistance against oppression. Women dress in warrior-like attire and carry symbolic weapons, reenacting the bravery of their ancestors. The festival is both a tribute to tribal heritage and a celebration of female empowerment. Songs and dances narrate tales of courage, and the community gathers to honor the spirit of resilience and unity.
+      </p>
+    </div>
+    <div class="viewer" id="viewer-jani">
+      <!-- Add your 360° image viewer here -->
+    </div>
+  </section>
+
+  <section class="festival">
+    <div class="text">
+      <h2>Bhagta Parab</h2>
+      <p>
+        Bhagta Parab is a high-energy tribal festival known for its acrobatic performances and devotion to Lord Shiva. Celebrants engage in daring stunts, including pole climbing and somersaults, often performed in open fields. The festival is a blend of physical prowess and spiritual fervor, with participants believing that their acts of bravery will earn divine blessings. It’s a spectacle of strength, faith, and community celebration.
+      </p>
+    </div>
+    <div class="viewer" id="viewer-bhagta">
+      <!-- Add your 360° image viewer here -->
+    </div>
+  </section>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/23d80n86d20/jharkhand/" data-label_1="JHARKHAND" data-label_2="WEATHER" data-theme="pure">JHARKHAND WEATHER</a>
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
+  
+  <script src="https://unpkg.com/three@0.150.1/build/three.min.js"></script>
+  <script src="https://unpkg.com/photo-sphere-viewer@5/dist/photo-sphere-viewer.js"></script>
+  <script>
+    // Initialize viewers
+    new PhotoSphereViewer.Viewer({
+      container: document.getElementById('viewer-sarhul'),
+      panorama: 'images/sarhul.jpg',
+      defaultYaw: '130deg'
+    });
+
+    new PhotoSphereViewer.Viewer({
+      container: document.getElementById('viewer-karma'),
+      panorama: 'images/karma.jpg',
+      defaultYaw: '130deg'
+    });
+
+    new PhotoSphereViewer.Viewer({
+      container: document.getElementById('viewer-sohrai'),
+      panorama: 'images/sohrai.jpg',
+      defaultYaw: '130deg'
+    });
+  </script>
+</body>
+</html>

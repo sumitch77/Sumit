@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Digital Tourism Platform for Jharkhand</title>
+  <meta name="description" content="A modern, AI-powered tourism platform for Jharkhand. Plan trips, explore destinations, shop local, and chat with our multilingual assistant.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+
+
+<body>
+  
+  
+  <!-- start of site -->
+  <header class="hero">
+    <nav class="navbar">
+      <div id="h1" class="logo">Jharkhand Tourism</div>
+      <div id="disp"> Form Submitted</div>
+      
+      
+       <div id="feedbacked"> feedback Submitted</div>  
+      
+      <div id="tmps" class="btn primary">
+        <div id="loader">
+          <br>
+          
+        </div>
+         <p id="msg1"> Sir Wait Please</p> 
+        <p id="msg2">   just few seconds </p>
+         <p id="msg3"> Almost done</p>
+        <p id="msg4"> Submitted</p>     
+      
+        
+      </div>
+      
+      
+      
+      
+      
+         
+      <ul>
+        <li><a href="#itinerary">Plan Your Trip</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#community">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Discover Jharkhand: <span>Culture, Nature &amp; Beyond</span></h1>
+      <p>Explore the heart of India with AI-powered planning, immersive previews, and authentic local experiences.</p>
+      <div class="hero-buttons">
+        <a href="#itinerary" class="btn primary">Plan Your Trip</a>
+        <a href="#marketplace" class="btn secondary">Explore Marketplace</a>
+      </div>
+    </div>
+    <div class="hero-slider">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Netarhat" class="active">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80" alt="Patratu">
+      <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=80" alt="Betla National Park">
+      <img src="https://images.unsplash.com/photo-1610630019474-8a20b6e06412?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aHVuZHJ1JTIwZmFsbHN8ZW58MHx8MHx8fDA%3D" alt="Hundru Falls">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80" alt="Deoghar">
+    </div>
+  </header>
+
+  
+  <section id="itinerary" class="section itinerary">
+    <h2 id="cli" >AI Itinerary Planner <br> Plan Your Trip Now <br> click Here</h2>
+  <div id="jsdiv">
+    
+    <form id="newform" class="itinerary-form" autocomplete="off">
+      <label> Enter Your Name 
+      
+      <input type="text" name="Name" placeholder="e.g Rahul" required > </label>
+        <label>
+          Enter Email
+          <input type="email" name="Email" placeholder="e.g example@gmail.com" required >
+        </label>
+      <label>
+          Enter Phone Number
+          <input type="text" name="Phone Number" pattern="\d{10}" maxlength="10" placeholder="e.g 47367875XX" required >
+        </label>
+      
+      <label>
+        Trip Duration (days):
+        <input type="number" name="Duration" min="1" max="300" placeholder="e.g. 5" required >
+      </label>
+      <label>
+        Interests:
+        <select name="Favourite Place" required>
+          <option>Nature</option>
+          <option>Cultural</option>
+          <option>Adventure</option>
+          <option>Wildlife</option>
+          <option>Spiritual</option>
+        </select>
+      </label>
+      <label>
+        Budget (INR):
+        <input type="number" id="budget" name="Budget" min="1000" placeholder="e.g. 10000 (optional)">
+      </label>
+      <button type="submit" id="oldbook" class="btn primary">Generate Itinerary</button>
+       <a href="#book" class="btn primary"> Best Hotels</a>
+      <button id="clear" class="btn primary" > Clear Itinerary</button>
+    </form>
+    <div id="output" class="itinerary-result">     
+    </div>
+    
+    
+  </div>
+    
+    <div id="planning"> </div>
+  </section>
+
+
+ 
+<section id="destinations" class="section destinations">
+  <h2>Top Destinations</h2>
+  <div class="destinations-grid">
+    <a class="destination-card" href="page1s.html" target="_blank" rel="noopener">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Netarhat">
+      <div class="card-info">
+        <h3>Netarhat</h3>
+        <p>Queen of Chotanagpur, famous for sunrise &amp; sunset views.</p>
+        
+      </div>
+    </a>
+    <a class="destination-card" href="page2s.html" target="_blank" rel="noopener">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Patratu">
+      <div class="card-info">
+        <h3>Patratu Valley</h3>
+        <p>Scenic drive, lush hills, and boating experiences.</p>
+        
+      </div>
+    </a>
+    <a class="destination-card" href="saur.html" target="_blank" rel="noopener">
+      <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=400&q=80" alt="Betla National Park">
+      <div class="card-info">
+        <h3>Betla National Park</h3>
+        <p>Wildlife sanctuary with elephants, tigers, and forts.</p>
+        
+      </div>
+    </a>
+    <a class="destination-card" href="page4.html" target="_blank" rel="noopener">
+      <img id="l1" src="https://images.unsplash.com/photo-1597384532390-98ece5da73cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGpoYXJraGFuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Hundru Falls">
+      <div class="card-info">
+        <h3>Hundru Falls</h3>
+        <p>Majestic waterfall, picnic spot, and trekking trails.</p>
+        
+      </div>
+    </a>
+    <a class="destination-card" href="deo.html" target="_blank" rel="noopener">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Deoghar">
+      <div class="card-info">
+        <h3>Deoghar</h3>
+        <p>Spiritual city, Baidyanath Temple, and Shravani Mela.</p>
+       
+      </div>
+    </a>
+    <!--  Dassam Falls -->
+    <a class="destination-card" href="Dassamfall.html" target="_blank" rel="noopener">
+      <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="Dassam Falls">
+      <div class="card-info">
+        <h3>Dassam Falls</h3>
+        <p>Picturesque waterfall near Ranchi, ideal for nature lovers.</p>
+       
+      </div>
+    </a>
+    <!-- Parasnath Hill -->
+    <a class="destination-card" href="first.html" target="_blank" rel="noopener">
+      <img id="l8" src="https://images.unsplash.com/photo-1745648593940-437d4014e909?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByYXNoYW50JTIwaGlsbHMlMjBqaGFya2hhbmR8ZW58MHx8MHx8fDA%3D" alt="Parasnath Hill">
+      <div class="card-info">
+        <h3>Parasnath Hill</h3>
+        <p>Highest peak in Jharkhand, sacred Jain pilgrimage site.</p>
+       
+      </div>
+    </a>
+    <!-- Hazaribagh National Park -->
+    <a class="destination-card" href="hazariBagh.html" target="_blank" rel="noopener">
+      <img id="l9" src="https://images.unsplash.com/photo-1720092844889-31a2142c82d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhhemFyaWJhZ2glMjBwYXJrJTIwamhhcmtoYW5kfGVufDB8fDB8fHww" alt="Hazaribagh National Park">
+      <div class="card-info">
+        <h3>Hazaribagh National Park</h3>
+        <p>Rich wildlife, scenic landscapes, and serene environment.</p>
+      
+      </div>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Marketplace -->
+  <section id="marketplace" class="section marketplace">
+    <h2>Marketplace</h2>
+    <div class="marketplace-grid">
+      <div class="market-card">
+        <img src="https://images.unsplash.com/photo-1580467469359-91a73a6e92ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJpYmFsJTIwaGFuZGljcmFmdHMlMjBqaGFya2hhbmR8ZW58MHx8MHx8fDA%3D" alt="Handicraft">
+        <div class="market-info">
+          <h3>Tribal Handicrafts</h3>
+          <p>Authentic bamboo, dokra, and woodwork from local artisans.</p>
+          <a href="handicrafts-1.html" target="_blank"><button class="btn small">Buy Now</button></a>
+        </div>
+      </div>
+      <div id="book" class="market-card">
+        <img src="https://images.unsplash.com/photo-1746549854902-332ec790ac7c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVkcm9vbSUyMGpoYXJraGFuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Homestay">
+        <div class="market-info">
+          <h3>Homestays</h3>
+          <p>Stay with local families for a true Jharkhandi experience.</p>
+          <a href="hotel2.html" target="_blank" ><button class="btn small">Book Now</button></a>
+        </div>
+      </div>
+      <div class="market-card">
+        <img src="https://images.unsplash.com/photo-1550752401-24f99d4c0ee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWNvJTIwdG91cmlzbSUyMGpoYXJraGFuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Eco-tour">
+        <div class="market-info">
+          <h3>Eco-Tourism Activities</h3>
+          <p>Guided treks, birdwatching, and village tours.</p>
+          <a href="eco-tourism-1.html" target="_blank"> <button class="btn small">Book Now</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport & Maps -->
+  <section id="transport" class="section transport">
+  <h2>Transport & Maps</h2>
+  <a href="contact.html"> <img id="k1" src="https://plus.unsplash.com/premium_photo-1681488098851-e3913f3b1908?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFwfGVufDB8fDB8fHww"><img id="k2"src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFwfGVufDB8fDB8fHww"></a>
+</section>
+
+  <!-- Community & Culture -->
+  <section id="community" class="section community">
+    <h2>Community & Culture</h2>
+    <div class="community-grid">
+    
+      <div  class="community-card">
+        <h3>Tribal Festivals</h3>
+        <p> <a href="page1.html" target="_blank">Experience Sarhul, Karma, Sohrai, and more vibrant celebrations.</a></p>
+      </div>
+      <div class="community-card">
+        <h3>Local Artisans</h3>
+        <p>Meet the creators behind Jharkhand’s unique crafts and music.</p>
+      </div>
+      <div class="community-card">
+        <h3>Cultural Stories</h3>
+        <p>Discover legends, folklore, and the living heritage of the region.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback & Reviews -->
+  <section id="reviews" class="section reviews">
+    <h2>Feedback & Reviews</h2>
+    <div class="reviews-list">
+      <div class="review-card">
+        <p>"Amazing experience! The AI planner made my trip effortless."</p>
+        <span>- Priya S.</span>
+      </div>
+      <div class="review-card">
+        <p>"Loved the AR previews and the local marketplace!"</p>
+        <span>- Rahul K.</span>
+      </div>
+      <div class="review-card ai-sentiment">
+        <p>AI Sentiment: <span class="positive">95% Positive</span></p>
+      </div>
+    </div>
+    <form id="form" class="itinerary-form">
+      <input name="feedback" type="feedback" placeholder="Give Feedback">
+      <button type="submit" id="feedback" class="btn primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Assistant -->
+  <div class="chatbot-icon" title="Chat with us!">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Chatbot" />
+    <span>EN | HI | <span title="Local dialect">🌐</span></span>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>About Us</h4>
+        <p>Jharkhand Tourism Board – Promoting sustainable, inclusive, and tech-driven tourism.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@jharkhandtourism.in<br>Phone: +91-12345-67890</p>
+      </div>
+      <div>
+        <h4>Partnerships</h4>
+        <p>Collaborate with us for eco-tourism, events, and local business growth.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/VisitJharkhand" target="_blank" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/jharkhandtourism/?hl=en" target="_blank" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        <a href="https://x.com/VisitJharkhand?t=3R1UwoQMso-DLsQD_T8LJA&s=09" target="_blank" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      </div>
+      <div class="footer-logo">
+        <img id="r1"src="https://th.bing.com/th/id/OIP.e_uuGjmwRcGO4nZTDbv1CgHaEK?w=333&h=187&c=8&rs=1&qlt=30&o=6&dpr=1.3&pid=3.1&rm=2" alt="Govt. of Jharkhand" height="50">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Jharkhand Tourism Board. All rights reserved.</p>
+    </div>
+    
+  </footer>
+  
+  <script src="done.js"></script>
+</body>
+  
+</html>
