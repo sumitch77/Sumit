@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrong{
+  color : white;
+    
+display: none;    
+}
+
+body {
+    
+    background-color: #15202B; 
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px; 
+    display: flex;
+    flex-direction: column;
+    height: 90vh; 
+    position: relative; 
+}
+
+/* Language Selector */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #8899A6; 
+}
+
+.language-selector label {
+    cursor: pointer;
+}
+
+/* Login Box and Form Styling */
+.login-box {
+  
+    margin-top: 15vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 15px;
+    border: 1px solid #38444D; 
+    border-radius: 6px;
+    background-color: #192734;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #1DA1F2; 
+  
+}
+
+/* Change placeholder color for better visibility */
+.input-group input::placeholder {
+    color: #8899A6;
+}
+
+/* Log in Button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px; 
+  
+    background-color: #1DA1F2; 
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 5px; 
+}
+
+.login-btn:hover {
+    background-color: #1991DB;
+}
+
