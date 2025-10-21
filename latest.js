@@ -44,7 +44,7 @@ ans.addEventListener("click",() =>{
       setTimeout(() => {
       ans.style.opacity = "1";
     }, 80);
-   r.innerText=eval(r.innerText);
+   r.innerText=eval(r.innerText).toFixed(5);
    
 });
 all.addEventListener("click",() =>{
