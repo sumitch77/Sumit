@@ -17,7 +17,7 @@
           <form id="form1">
            
                 <div class="input-group">
-                    <div id="wrong"> Invalid Username , Enter Value</div>
+                    <div id="wrong"> Invalid Username (At least of 5 characters)</div>
                     <br>
                                       
                     <input type="text" id="username" name="username" placeholder="Username" required >
@@ -26,8 +26,14 @@
                 <div class="input-group">
                     <input type="password"  id="password" name="password" placeholder="Password" required pattern="[a-zA-Z0-9]{8,}" title="Minimum 8 digits required">    
                 </div>
+               <div class="input-group">
+                    <input type="email"  id="email" name="email" placeholder="Enter Email" required>    
+                </div>
+               <div class="input-group">
+                    <input type="number"  id="phone" name="phone no" placeholder="Enter Phone Number" required pattern="{10,}" title="Minimum 10 digits required">    
+                </div>
                 
-                <button type="submit" id="login1" class="login-btn">Create New Account</button>
+                <button id="login1" class="login-btn">Create New Account</button>
             
           </form>
          
