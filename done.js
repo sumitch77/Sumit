@@ -252,6 +252,9 @@ evaluate.addEventListener("click",() =>{
 
 });
 
-  
+  let chatbot= document.querySelector("#chatbot");
+chatbot.addEventListener("click",()=>{
+    window.location.href="chatbot.html";
+});
   
   
