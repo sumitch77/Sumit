@@ -1,0 +1,81 @@
+body{
+  background-image: url("beti3.png");
+  background-size: cover;
+  background-position: -10px 10px;
+  
+}
+.lab{
+ display: none;
+font-size: 40px;  
+}
+h1{
+  justify-self: center;
+}
+#main{
+  margin-left: 20px;
+}
+
+#Q1{
+  font-size: 40px;
+}
+
+#Q2,#Q0,#Q5,#Q4,#Q3{
+  font-size: 40px;
+}
+
+#ans1,#ans2,#ans3,#ans4{
+  font-size: 40px;
+  
+}
+
+#job{
+  font-size: 30px;
+}
+#calc{
+  margin-left: 20px;
+  font-size: 40px;
+  background-color: palevioletred;
+  color:black;
+}
+
+#name{
+  font-size: 40px;
+  
+  border-radius: 1%;
+}
+
+#salary{
+  display: none;
+  font-size: 40px;
+}
+
+#khett{
+  display: none;
+  width:600px;
+  
+font-size: 40px;
+}
+
+
+#housev{
+  display: none;
+  font-size: 40px;
+  width:600px;
+}
+
+#housec{
+display: none;  
+  font-size: 40px;
+  width:600px;
+}
+
+#housecm{
+  display: none;
+  font-size: 40px;
+  width:600px;
+}
+
+.a{
+  display: none;
+  font-size: 40px;
+}

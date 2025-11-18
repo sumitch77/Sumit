@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="vinay.css">
+</head>
+<body>
+  <h1> Calculate My Dahej</h1>
+  <br><br>
+  <div id="main">
+    <p id="Q0">Enter Your Name</p>
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    
+    <p id="Q1">Choose Job Type </p>
+    <select id="job" name="joob">   
+      <option value="selec">Select</option>
+            
+      <option value="Private">Private</option>
+      <option value="Goverment">Goverment</option>
+      <option value="Nothing">Nothing</option>
+      
+    </select>
+    
+    <br><br>
+    <input type="number" id="salary" placeholder="Enter Salary (per month)">    
+    
+    
+    <p id="Q2">Do you have Agricultural land</p>
+    <div id="ans1">
+    <label>
+      <input type="radio" value="yes" class="khet"  name="kheet"> Yes
+    </label>
+    <label>
+      <input type="radio" value="no" class="khet"  name="kheet"> No
+    </label>
+    </div> 
+    
+     <br><br>
+    <input type="number" id="khett" placeholder="Enter Farm land area (in Hectare)">    
+   
+    
+    
+     <p id="Q3">Do you have Animals</p>
+    <div id="ans2">
+    <label>
+    <input type="radio" value="yes" class="anima" name="anim"> Yes
+    </label>
+    <label>
+      <input type="radio" value="no" class="anima" name="anim"> No
+    </label>
+    </div>
+    <br>
+    <label class="lab">  
+    <input type="radio"  id="cow" class="animal" name="ani">Cow</label><br>
+    <label class="lab">
+    <input type="radio" id="Buffalo" class="animal" name="anii">Buffalo</label><br>
+    <label class="lab">
+    <input type="radio" id="Sheep" class="animal" name="aniii">Sheep</label><br>
+      <label class="lab">
+    <input type="radio" id="Goat" class="animal" name="aniiii">Goat</label>
+    
+  
+    
+    <p id="Q4">Do you have any Property in Village (Like House)</p>
+    <div id="ans3">
+    <label>
+      <input type="radio" value="yes"  class="propV" name="village"> Yes
+    </label>
+    <label>
+      <input type="radio" value="no" class="propV" name="village"> No
+    </label>
+    </div>
+     <br><br>
+    
+    <input type="number" id="housev" placeholder="Enter House area (in Square Foot)">    
+    
+    
+     <p id="Q5">Do you have any Property in City (Like House)</p>
+    <div id="ans4">
+    <label>
+      <input type="radio" value="yes" class="propC" name="city"> Yes
+    </label>
+    <label>
+      <input type="radio" value="no" class="propC" name="city"> No
+    </label>
+    </div>
+    <br><br>
+    
+   <input type="number" id="housec" placeholder="Enter House area (in Square Foot)">   
+    <br>    
+    
+    <input type="number" id="housecm" placeholder="Enter Cost per Square foot in your Area">    
+    
+    
+    
+    
+  </div>
+  <br>
+  <button  id="calc" type="button">Calculate</button>
+  
+  <script src="vinay.js"></script>
+</body>
+</html>
