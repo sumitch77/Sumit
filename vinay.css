@@ -1,18 +1,23 @@
-body{
-  background-image: url("beti3.png");
-  background-size: cover;
-  background-position: -10px 10px;
-  
+#img{
+  position: absolute;
+  z-index: -1;
+  top:0px;
+  left:0px;
+  height: 2550px;
+  width:1000px;
 }
+
 .lab{
  display: none;
 font-size: 40px;  
 }
 h1{
   justify-self: center;
+  font-size: 40px;
 }
 #main{
   margin-left: 20px;
+  
 }
 
 #Q1{
