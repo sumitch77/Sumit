@@ -11,8 +11,10 @@ let propV = document.querySelectorAll(".propV");
 let housev = document.querySelector("#housev");
 let propC = document.querySelectorAll(".propC");
 let housec = document.querySelector("#housec");
-let housecm = document.querySelector("#housecm");
-
+let gold = document.querySelectorAll(".gold");
+let silver = document.querySelectorAll(".silver");
+let goldd = document.querySelector("#goldd");
+let silverr = document.querySelector("#silverr");
 
 
 
@@ -97,6 +99,41 @@ propcc.addEventListener('click', () => {
 });
 
 
+gold.forEach(goldl =>{
+    
+goldl.addEventListener('click', () => {
+    if(goldl.value==="yes"){
+        goldd.style.display="block";
+        
+        
+    }
+      else if(goldl.value==="no"){
+          goldd.style.display="none";
+        
+    }
+    
+  });
+});
+
+
+silver.forEach(sil =>{
+    
+sil.addEventListener('click', () => {
+    if(sil.value==="yes"){
+        silverr.style.display="block";
+        
+        
+    }
+      else if(sil.value==="no"){
+          silverr.style.display="none";
+        
+    }
+    
+  });
+});
+
+let da = document.querySelector("#da");
+
 let calc = document.querySelector("#calc");
 
 
@@ -130,8 +167,753 @@ calc.addEventListener("click",()=>{
     if(mhousecm ===""){
         mhousecm = 0;
     }
+    let mho = mhousec*mhousecm;
+    
+    let mgold = goldd.value;
+    if(mgold ===""){
+        mgold = 0;
+    }
+    
+    let msilver = silverr.value;
+    if(msilver ===""){
+        msilver = 0;
+    }
+    
+    if(mjob==="Private"){
+        if(msalary<30000){
+             if(mkhett<=2){
+                  if(mho<=4000000){
+                       if(mgold<100){
+                           if(msilver<100){
+                           da.innerText="50k Udhar";      
+                           }
+                           else if(msilver<=300){
+                          da.innerText="50k Udhar";  
+                           }
+                           else if(msilver<=500){
+                          da.innerText="50k Udhar";  
+                           }
+                           else if(msilver>500){
+                          da.innerText="50k Udhar";  
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           da.innerText="000000";       
+                           }
+                           else if(msilver<=300){
+                          da.innerText="000000";  
+                           }
+                           else if(msilver<=500){
+                          da.innerText="000000";  
+                           }
+                           else if(msilver>500){
+                          da.innerText="000000";   
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           da.innerText="100000";        
+                           }
+                           else if(msilver<=300){
+                          da.innerText="100000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="100000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="100000";
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           da.innerText="200000";     
+                           }
+                           else if(msilver<=300){
+                          da.innerText="200000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="200000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="200000";  
+                           } 
+                      }
+                  }
+                 else if(mho<=8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           da.innerText="000000";       
+                           }
+                           else if(msilver<=300){
+                          da.innerText="000000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="000000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="000000"; 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           da.innerText="000000";      
+                           }
+                           else if(msilver<=300){
+                          da.innerText="000000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="000000";
+                           }
+                           else if(msilver>500){
+                          da.innerText="000000";
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           da.innerText="100000";      
+                           }
+                           else if(msilver<=300){
+                          da.innerText="100000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="100000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="100000";
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           da.innerText="400000";     
+                           }
+                           else if(msilver<=300){
+                          da.innerText="400000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="400000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="400000";  
+                           } 
+                      }
+                     
+                 }
+                 else if(mho>8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           da.innerText="200000";       
+                           }
+                           else if(msilver<=300){
+                          da.innerText="200000";  
+                           }
+                           else if(msilver<=500){
+                          da.innerText="200000";
+                           }
+                           else if(msilver>500){
+                          da.innerText="200000"; 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                          da.innerText="200000";     
+                           }
+                           else if(msilver<=300){
+                          da.innerText="200000";
+                           }
+                           else if(msilver<=500){
+                          da.innerText="200000";
+                           }
+                           else if(msilver>500){
+                          da.innerText="200000";
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           da.innerText="400000";      
+                           }
+                           else if(msilver<=300){
+                          da.innerText="400000"; 
+                           }
+                           else if(msilver<=500){
+                          da.innerText="400000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="400000";  
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           da.innerText="500000";      
+                           }
+                           else if(msilver<=300){
+                          da.innerText="500000";
+                           }
+                           else if(msilver<=500){
+                          da.innerText="500000"; 
+                           }
+                           else if(msilver>500){
+                          da.innerText="500000"; 
+                           } 
+                      }
+                 }
+             }
+            else if(mkhett<=5){
+                 if(mho<=4000000){
+                       if(mgold<100){
+                           if(msilver<100){
+                           console.log("0");      
+                           }
+                           else if(msilver<=300){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver>500){
+                          console.log("0 Udhar"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("0 Udhar");      
+                           }
+                           else if(msilver<=300){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver>500){
+                          console.log("0 Udhar"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("100000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 100000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("100000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("100000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("200000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("200000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("200000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("200000"); 
+                           } 
+                      }
+                  }
+                 else if(mho<=8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("300000 ");      
+                           }
+                           else if(msilver<=300){
+                          console.log("300000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("300000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("300000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("300000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("300000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("300000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("300000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                     
+                 }
+                 else if(mho>8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000 "); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("500000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("50000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                      }
+                 }
+                
+            }
+            else if(mkhett<=10){
+                 if(mho<=4000000){
+                       if(mgold<100){
+                           if(msilver<100){
+                           console.log("500000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("500000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("50000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("800000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 800000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("800000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("800000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("1000000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("1000000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("1000000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("1000000"); 
+                           } 
+                      }
+                  }
+                 else if(mho<=8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("500000 ");      
+                           }
+                           else if(msilver<=300){
+                          console.log("500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("600000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("600000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("600000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("600000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("800000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 800000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("800000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("800000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("1000000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("1000000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("1000000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("1000000"); 
+                           } 
+                      }
+                     
+                 }
+                 else if(mho>8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("800000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("800000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("800000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("800000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("800000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("800000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("800000 "); 
+                           }
+                           else if(msilver>500){
+                          console.log("800000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("1000000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 1000000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("1000000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("1000000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("1200000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("1200000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("1200000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("1200000"); 
+                           } 
+                      }
+                 }
+                
+            }
+            else if(mkhett>10){
+                 if(mho<=4000000){
+                       if(mgold<100){
+                           if(msilver<100){
+                           console.log("0");      
+                           }
+                           else if(msilver<=300){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver>500){
+                          console.log("0 Udhar"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("0 Udhar");      
+                           }
+                           else if(msilver<=300){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("0 Udhar"); 
+                           }
+                           else if(msilver>500){
+                          console.log("0 Udhar"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("100000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 100000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("100000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("100000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("200000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("200000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("200000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("200000"); 
+                           } 
+                      }
+                  }
+                 else if(mho<=8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("300000 ");      
+                           }
+                           else if(msilver<=300){
+                          console.log("300000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("300000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("300000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("300000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("300000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("300000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("300000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                     
+                 }
+                 else if(mho>8000000){
+                     if(mgold<100){
+                           if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                       }
+                      else if(mgold<=300){
+                          if(msilver<100){
+                           console.log("400000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("400000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("400000 "); 
+                           }
+                           else if(msilver>500){
+                          console.log("400000"); 
+                           } 
+                      }
+                      else if(mgold<=500){
+                          if(msilver<100){
+                           console.log("500000");      
+                           }
+                           else if(msilver<=300){
+                          console.log(" 500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                      }
+                      else if(mgold>500){
+                          if(msilver<100){
+                           console.log("50000");      
+                           }
+                           else if(msilver<=300){
+                          console.log("500000"); 
+                           }
+                           else if(msilver<=500){
+                          console.log("500000"); 
+                           }
+                           else if(msilver>500){
+                          console.log("500000"); 
+                           } 
+                      }
+                 }
+            }
+         }  
+        else if(msalary<=100000){
+            
+        }
+        else if(msalary>100000){
+            
+        }
+        
+        
+    }
     
     
+    
+    else if(mjob==="Goverment"){
+        
+        
+    }
+    
+    
+    
+    else{
+        
+    }
     
     
 });

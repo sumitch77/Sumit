@@ -3,7 +3,7 @@
   z-index: -1;
   top:0px;
   left:0px;
-  height: 2550px;
+  height: 3050px;
   width:1000px;
 }
 
@@ -20,21 +20,28 @@ h1{
   
 }
 
+#da{
+  font-size: 60px;
+  justify-self: center;
+  color:green;
+}
+
+
 #Q1{
   font-size: 40px;
 }
 
-#Q2,#Q0,#Q5,#Q4,#Q3{
+#Q2,#Q0,#Q5,#Q4,#Q3,#Q6,#Q7{
   font-size: 40px;
 }
 
-#ans1,#ans2,#ans3,#ans4{
+#ans1,#ans2,#ans3,#ans4,#ans5,#ans6{
   font-size: 40px;
   
 }
 
 #job{
-  font-size: 30px;
+  font-size: 40px;
 }
 #calc{
   margin-left: 20px;
@@ -83,4 +90,9 @@ display: none;
 .a{
   display: none;
   font-size: 40px;
+}
+#goldd,#silverr{
+  display: none;
+  font-size: 40px;
+  width:600px;
 }
