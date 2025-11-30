@@ -1,26 +1,25 @@
-#ooga {
-  color: red;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 40px;
-  font-family: arial;
-  text-decoration: none;
-}
-#nok{
-  height:400px;
-  width: 300px;
-  
-}
-#nok:active{
-  background-color: red;
-  transform: scale(5);
-  transform-origin: 200px 350px;
-}
-
-#pred{
-  
-  text-decoration: none;
-  font-size: 30px;
+h1{
   color:green;
 }
 
+
+#pred,a{
+  
+  text-decoration: none;
+  font-size: 30px;
+  color:blue;
+}
+
+#insta,#twit,#face{
+ height:50px; 
+}
+
+#fot{
+  display: flex;
+  gap:20px;
+  justify-content: ;
+}
+
+#no{
+  font-size: 20px;
+}

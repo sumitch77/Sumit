@@ -7,110 +7,44 @@
   <link rel="stylesheet" href="this.css">
 </head>
 <body>
-  <h1><b> Hello 
-  Click below</b> 
-  </h1>
-  <a href="new.html">
-    <img src="" height="500">
-  </a>
-  
-  
-  <br>
-  <br>
-  <br>
- 
-  <br><br>
-  <a id="pred" href="hello.html">Next day predictor</a>
-  <br> <br>
-  <a id="calculator" href="latest.html">calculator</a>
-  <br> <br>
-  <a href="sign.html">login</a>
-  <br><br>
-  <a href="vinay.html">Dowry</a>
-  <br><br>
-  <a href="https://sumitch77.github.io/cid/">CID</a>
-  <footer>
-    <br>
-    <a href="https://sumitch77.github.io/Tourism-/">Click</a>
-   <br>
-    owner -
-    <br>
-  Instagram - <a href="https://www.instagram.com/sumit_ch_77?igsh=b2Y1ZndpeXkxemRo">Sumit_ch_77</a>
-  <br>
+  <h1>Projects
+  </h1> 
 
+  <br>
+  <a id="calculator" href="latest.html">•Calculator</a>
+  <br> <br>
+  <a id="log" href="sign.html">•Login</a>
+  <br><br>
+  <a id="dowry" href="vinay.html">•Dowry</a>
+  <br><br>
+  <a  id="cid" href="https://sumitch77.github.io/cid/">•CID</a>
+    <br><br>
+  <a id="tourism" href="https://sumitch77.github.io/Tourism-/">•Tourism</a>
+   <br><br>
+    
+  <footer> 
+    <h2>Follow us on</h2>
+    
+    <div id="fot">
+  <a href="https://www.instagram.com/sumit_ch_77?igsh=b2Y1ZndpeXkxemRo"><img id="insta" src="ins.jpg" alt="instagram logo"></a>
+  <br>
+  <a href="https://www.facebook.com/profile.php?id=61560632547412&mibextid=ZbWKwL"><img id="face"  src="faceb.png" alt="facebook logo"></a>
+  <br>
+    <a id="twit" href=""><img id="face"  src="xt.jpg" alt="facebook logo"></a>
+    <br>
+  <a href="https://www.chess.com/member/nobody7728"><img id="face"  src="ches.jpg" alt="facebook logo"></a>
   
-  Facebook - <a href="https://www.facebook.com/profile.php?id=61560632547412&mibextid=ZbWKwL">Sumit Chaudhary</a>
-  <br>
-  Chess.com account - <a href="https://www.chess.com/member/nobody7728">Nobody7728</a>
-  <br>
-  BGMI ID - GodSumit
-  <br>
-    <form id="newform" >
-    <input type="text" name="new" placeholder="enter"> 
-      <br>
-     <input type="email" name="email" placeholder="enter email">
-      <br>
-      <input type="password" name="password" placeholder="enter password">
       
-      <br>
-      <button type="submit"> submit </button>
-    </form>
+    </div>
+    <br><br>
+    <no id="no">
+  BGMI ID - GodSumit
+    <br><br>
+  COC tag - #PCG9CCYUC
+  <br>
+    </no>  
     </footer>
   
   
 </body>
-<script>
-const form = document.getElementById("newform");
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // Collect all input values dynamically
-  const data = {};
-  const elements = form.elements;
-
-  for (let i = 0; i < elements.length; i++) {
-    const el = elements[i];
-    if (!el.name) continue;
-
-    // Checkboxes: collect all checked values
-    if (el.type === "checkbox") {
-      if (!data[el.name]) data[el.name] = [];
-      if (el.checked) data[el.name].push(el.value);
-    } 
-    // Radio buttons: take only the selected one
-    else if (el.type === "radio") {
-      if (el.checked) data[el.name] = el.value;
-    } 
-    // Other inputs
-    else {
-      data[el.name] = el.value;
-    }
-  }
-
-  // Convert checkbox arrays to comma-separated strings
-  for (let key in data) {
-    if (Array.isArray(data[key])) {
-      data[key] = data[key].join(", ");
-    }
-  }
-
-  // Send data to your Google Sheets Web App
-  fetch("https://script.google.com/macros/s/AKfycbwLkz2MwacMWLOB2FYxupBNhAVx6gLqQJ71G03pyeyCoswV5vADxleif9waLQSlp8gd/exec", {
-    method: "POST",
-  mode: "no-cors",   // no-cors mode avoids preflight
-  headers: { "Content-Type": "text/plain" },
-  body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(response => {
-    alert("submitted");
-    form.reset();
-  })
-  .catch(err => console.error(err));
-});
-</script>
-
-
-
 </html>
