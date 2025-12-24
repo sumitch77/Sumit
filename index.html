@@ -6,7 +6,11 @@
   <title>Hello, World!</title>
   <link rel="stylesheet" href="this.css">
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  
     </script>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.1/core.css">
+
+<script type="module" src="https://pyscript.net/releases/2024.10.1/core.js"></script>
 </head>
 <body>
   <h1>Projects
@@ -27,6 +31,14 @@
    <br><br>
   <a href="finalp.pdf" download>click</a>
   <a href="coa.pdf" download>clocm</a>
+  
+  <br><br>
+  <py-script src="sumit.py"/></py-script>
+<input type="number" placeholder="enter row" id="hrow">
+<input type="number" placeholder="enter row" id="hcol">
+<button id="but5" type="button">Click</button>
+
+<div id="mat" ></div>
   <footer> 
     <h2>Follow us on</h2>
     
@@ -50,6 +62,23 @@
     </div>  
     </footer>
   
+
+<script>
+let ro1 = document.querySelector("#hrow");
+let co1 = document.querySelector("#hcol");
+let but5 = document.querySelector("#but5");
+let mat = document.querySelector("#mat");
+
+but5.addEventListener("click",()=>{
+  
+  let rowval = ro1.value;
+  let colval = co1.value;
+  
+});
+
+</script>
+
+
   <script>
 
   function getLocation() {
