@@ -1,0 +1,60 @@
+
+h1{
+  font-size: 80px;
+  color: aqua;
+  position : relative;
+  left : 400px;
+  align-self: center;
+}
+
+#auto{
+  font-size: 45px;
+  position : relative;
+  left : 50px;
+  background-color: aliceblue;
+  display: block;
+}
+
+#nok{
+  font-size: 45px;
+  position : relative;
+  left : 50px;
+  color: cadetblue;
+  
+}
+#ent{
+  
+  font-size: 50px;
+  position : relative;
+  left : 50px;
+  color : cadetblue;
+  display: none;
+  
+}
+
+#city{
+  font-size: 45px;
+  position : relative;
+  left : 50px;
+  background-color: azure;
+  display: none;
+}
+
+#getlo{
+  font-size: 45px;
+  position : relative;
+  left : 50px;
+  background-color: aliceblue;
+  display: none;
+}
+#man{
+  font-size: 45px;
+  position : relative;
+  left : 50px;
+  background-color: aliceblue;
+}
+
+#alldata{
+  font-size: 50px;
+  color: greenyellow;
+}
