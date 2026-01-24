@@ -1,39 +1,50 @@
 
 h1{
-  font-size: 80px;
-  color: aqua;
+  font-size: 100px;
+  color: #ffffff;
   position : relative;
   left : 400px;
+  opacity: 0.6;
   align-self: center;
+}
+#img{
+  position : absolute;
+  top:0px;
+  left:0px;
+  z-index: -1;
+  height: 2900px;
+  width:1500px;
 }
 
 #auto{
-  font-size: 45px;
+  font-size: 65px;
   position : relative;
   left : 50px;
-  background-color: aliceblue;
+  background-color: #1f7aff;
+  color:white;
   display: block;
 }
 
 #nok{
-  font-size: 45px;
+  font-size: 65px;
   position : relative;
   left : 50px;
-  color: cadetblue;
+  color: #ffffff;
   
 }
 #ent{
   
-  font-size: 50px;
+  font-size: 70px;
   position : relative;
   left : 50px;
-  color : cadetblue;
+  color : #ffffff;
   display: none;
+  background-image: rgba(0, 0, 0, 0.55);
   
 }
 
 #city{
-  font-size: 45px;
+  font-size: 65px;
   position : relative;
   left : 50px;
   background-color: azure;
@@ -41,20 +52,21 @@ h1{
 }
 
 #getlo{
-  font-size: 45px;
+  font-size: 65px;
   position : relative;
   left : 50px;
   background-color: aliceblue;
   display: none;
 }
 #man{
-  font-size: 45px;
+  font-size: 65px;
   position : relative;
   left : 50px;
-  background-color: aliceblue;
+  background-color: #1f7aff;
+  color:white;
 }
 
 #alldata{
-  font-size: 50px;
-  color: greenyellow;
+  font-size: 65px;
+  color: white;
 }

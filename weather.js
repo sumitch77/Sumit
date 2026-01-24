@@ -142,14 +142,14 @@ async function pass(position){
       
     cit.innerText = "Your city : "+ result.location.name;
     coun.innerText = "your country : "+ result.location.country;
-    time.innerText = "local time  :" + result.location.localtime;
+    time.innerText = "local time  : " + result.location.localtime;
     temc.innerText = "Temperature in °C : " + result.current.temp_c + "°C";
     temf.innerText= "Temperature in °F : " + result.current.temp_f + "°F";
-    atmos.innerText = "Atmosohere : "+ result.current.condition.text ;
+    atmos.innerText = "Atmosohere : " + result.current.condition.text ;
     
     airq.innerText = "Air quality index : " + finaq;
-    humid.innerText = "Humidity : " + result.current.humidity;
-    wind.innerText = "Wind speed in Km/ph : " + result.current.wind_kph;
+    humid.innerText = "Humidity : " + result.current.humidity+ "%";
+    wind.innerText = "Wind speed : " + result.current.wind_kph + "Km/h";
     
     
 }
@@ -185,13 +185,14 @@ getlo.addEventListener("click",async()=>{
       
    cit.innerText = "Your city : "+ result.location.name;
     coun.innerText = "your country : "+ result.location.country;
-    time.innerText = "local time  :" + result.location.localtime;
+    time.innerText = "local time  : " + result.location.localtime;
     temc.innerText = "Temperature in °C : " + result.current.temp_c + "°C";
     temf.innerText= "Temperature in °F : " + result.current.temp_f + "°F";
-    atmos.innerText = "Atmosohere : "+ result.current.condition.text ;
+    atmos.innerText = "Atmosohere : "+ result.current.condition.text;
+      
     airq.innerText = "Air quality index : " + finaq;
     humid.innerText = "Humidity : " + result.current.humidity + "%";
-    wind.innerText = "Wind speed in Km/ph : " + result.current.wind_kph + "Km/h";
+    wind.innerText = "Wind speed : " + result.current.wind_kph + "Km/h";
     } catch (e){
         cit.innerText = "please check your city spelling or use our automatic live location option ";
     }
