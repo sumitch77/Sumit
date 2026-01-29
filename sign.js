@@ -16,7 +16,7 @@ submit.addEventListener("click",(e)=>{
     
   localStorage.setItem("username",name.value);
     localStorage.setItem("password",pass.value);
-        window.location.href="indexm.html";
+        window.location.href="mainf.html";
     }
   
   

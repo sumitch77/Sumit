@@ -1,25 +1,115 @@
-h1{
-  color:green;
-}
 
-
-#pred,a{
-  
-  text-decoration: none;
-  font-size: 30px;
-  color:blue;
-}
-
-#insta,#twit,#face{
- height:50px; 
-}
-
-#fot{
+body {
+  margin: 0;
+  min-height: 100vh;
   display: flex;
-  gap:20px;
-  justify-content: ;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d1117;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(210, 100%, 16%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(225, 39%, 30%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(210, 100%, 16%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(225, 39%, 30%, 1) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
 }
 
-#no{
-  font-size: 20px;
+
+/* Individual */
+#calculator, #weather, #log, #doy, #cid, #tourism, #polity {
+  display: block;
+  width: 300px;
+  padding: 15px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.1) ;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2) ;
+  color: white ;
+}
+
+
+#calculator { 
+  background: #e8f4fd;
+  color: #2980b9;
+}
+
+#weather{
+  background: #eef9f1;
+  color: #27ae60;
+}
+
+#log {
+  background: #fef5e7;
+  color: #f39c12;
+}
+
+#doy { 
+  background: #f4ecf7;
+  color: #8e44ad;
+}
+
+#cid { 
+  background: #fdedec;
+  color: #c0392b;
+}
+
+#tourism{ 
+  background: #eaf2f8;
+  color: #34495e;
+}
+
+#polity { 
+  background: #ebf5fb;
+  color: #2e86c1;
+}
+
+
+#calculator:hover, #weather:hover, #log:hover, 
+#doy:hover, #cid:hover, #tourism:hover, #polity:hover {
+  transform: translateX(10px);
+  filter: brightness(0.95);
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+
+#fot {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+
+#insta, #face, #twit {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#insta:hover { transform: scale(1.2) rotate(5deg); }
+#face:hover  { transform: scale(1.2) rotate(-5deg); }
+#twit:hover  { transform: scale(1.2) translateY(-5px); }
+
+
+#mat {
+  margin: 20px 0;
+  height: 2px;
+  width: 50%;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
 }
