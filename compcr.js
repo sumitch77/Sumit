@@ -88,7 +88,7 @@ play.addEventListener("click",()=>{
     complay.innerText = compusc;
     userplay.innerText = corrun;
     if(compusc === corrun){
-        sessionStorage.setItem("finalcomputrrun",a);
+        sessionStorage.setItem("finalcomputerrun",a);
         let finaluserrun = sessionStorage.getItem("finaluserrun"); 
         if(finaluserrun===null){
             goto.style.display ="block";
