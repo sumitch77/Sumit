@@ -92,6 +92,7 @@ play.addEventListener("click",()=>{
     if(compusc === corrun){
         sessionStorage.setItem("finaluserrun",a);                        
         let finalcomprun = sessionStorage.getItem("finalcomputerrun");
+        play.style.display = "none";
         if(finalcomprun===null){
             goto.style.display ="block";
         msg.innerText = "OUT";
@@ -101,14 +102,14 @@ play.addEventListener("click",()=>{
         if(finalcomprun!== null){
            if(Number(finalcomprun) === a){
                
-               msg.innerHTML = `<p> your score is ${a} <br> computer score is ${finalcomprun} <br> Draw`;     
+               msg.innerHTML = `<p> your score is ${a} <br> Computer score is ${finalcomprun} <br> Draw`;     
            }    
            if(Number(finalcomprun) > a){
-               msg.innerHTML = `<p> your score is ${a} <br> computer score is ${finalcomprun} <br> Computer Win`;
+               msg.innerHTML = `<p> your score is ${a} <br> Computer score is ${finalcomprun} <br> Computer Win`;
            }
            
             if(Number(finalcomprun) < a){
-               msg.innerHTML = `<p> your score is ${a} <br> computer score is ${finalcomprun} <br> You win`;           
+               msg.innerHTML = `<p> your score is ${a} <br> Computer score is ${finalcomprun} <br> You win`;           
            }
             
             goto2.style.display = "block"
