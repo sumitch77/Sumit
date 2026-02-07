@@ -68,7 +68,10 @@ start.addEventListener("click", async () => {
   }
 
   // 🔔 TIME OVER CLEANUP
-  hide.style.display = "none";
+  dis.forEach(diss => {
+  diss.disabled = true;
+  
+  });
   result.style.display = "none";
   replay.style.display= "block";
 
@@ -137,6 +140,7 @@ function showresult(){
 
 result.addEventListener("click",()=>{
   showresult();
+  replay.style.display= "block";
 });
 
 replay.addEventListener("click",()=>{
