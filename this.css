@@ -26,7 +26,7 @@ h1,h2{
 }
 
 /* Individual */
-#calculator, #weather, #log, #doy, #cid, #tourism, #polity {
+#calculator, #weather, #log, #doy, #cid, #test,#tourism, #polity {
   display: block;
   width: 650px;
   padding: 15px;
@@ -79,9 +79,13 @@ h1,h2{
   background: #ebf5fb;
   color: #2e86c1;
 }
+#test{
+  background: #fef9e7;
+  color:#d4ac0d;
+  
+}
 
-
-#calculator:hover, #weather:hover, #log:hover, 
+#calculator:hover, #weather:hover, #log:hover, #test:hover,
 #doy:hover, #cid:hover, #tourism:hover, #polity:hover {
   transform: translateX(10px);
   filter: brightness(0.95);
