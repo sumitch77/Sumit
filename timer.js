@@ -44,7 +44,7 @@ start.addEventListener("click", async () => {
       
     }
 
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     // countdown logic
     let s = Number(sec.innerText);
