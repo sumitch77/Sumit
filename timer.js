@@ -71,7 +71,8 @@ start.addEventListener("click", async () => {
   dis.forEach(diss => {
   diss.disabled = true;
   
-  });
+  })
+  subm();
   result.style.display = "none";
   replay.style.display= "block";
 
@@ -81,7 +82,7 @@ start.addEventListener("click", async () => {
   
   let score = 0;
 
-submit.addEventListener("click" , ()=>{
+function subm(){
   dis.forEach(diss => {
   diss.disabled = true;
   
@@ -131,7 +132,11 @@ if(Number(selected8.value) === 3){
     score+=1;
   }
   
+}
 
+submit.addEventListener("click" , ()=>{
+  
+subm();
 });
 
 function showresult(){
