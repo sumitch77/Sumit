@@ -36,7 +36,7 @@ h1 {
   border-color: #38bdf8;
 }
 
-#get {
+#get,#get2 {
   padding: 12px 30px;
   border-radius: 8px;
   border: none;
@@ -48,11 +48,13 @@ h1 {
   transition: transform 0.2s, background-color 0.2s;
 }
 
-#get:hover {
+#get:hover ,#get2:hover{
   background-color: #7dd3fc;
   transform: translateY(-2px);
 }
-
+#addimg{
+  height: 400px;
+}
 
 #answer, #answer2 {
   width: 100%;
