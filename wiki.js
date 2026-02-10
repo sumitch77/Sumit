@@ -43,18 +43,32 @@ function fetchImage(title) {
 }
     
 let img = "";
+
+let main = "";
     
 but.addEventListener("click", () => {
   but.disabled = true;
   setTimeout(()=>{
     but.disabled = false;
   },5000);
+  main = ques.value.toLowerCase();
+  if(main.includes("sumit")){
+    answer.innerText = "Invalid Question";
+    return;
+  }
+  if(main.includes("ched")){
+    answer.innerText = "Invalid Question";
+    return;
+  }
+  if(main.includes("ozone")){
+    answer.innerText = "Invalid Question";
+    return;
+  }
+  console.log(main);
     userInput = ques.value.trim();
     if (!userInput) return;
-    
-    
+  
     user = encodeURIComponent(userInput);
-    
     fetch(
         `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${user}&format=json&origin=*`
     )
