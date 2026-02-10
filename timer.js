@@ -9,6 +9,7 @@ let result = document.querySelector("#res");
 let ans = document.querySelector("#ans");
 let dis = document.querySelectorAll(".dis");
 let replay = document.querySelector("#replay");
+let edit = document.querySelector("#edit");
 
 
 result.style.display= "none";
@@ -111,20 +112,20 @@ const selected10 = document.querySelector('input[name="ten"]:checked');
   }if(selected2.value === "up"){
     score+=1;
   }
-  if(Number(selected3.value) === 7){
+  if(Number(selected3.value) === 8){
     score+=1;
   }if(selected4.value === "asia"){
     score+=1;
   }if(Number(selected5.value) === 7){
     score+=1;
   }
-  if(Number(selected6.value) === 11){
+  if(Number(selected6.value) === 13){
     score+=1;
   }
   if(selected7.value === "mumbai"){
     score+=1;
   }
-if(Number(selected8.value) === 3){
+if(Number(selected8.value) === 2){
     score+=1;
   }if(Number(selected9.value) == 1950){
     score+=1;
