@@ -39,11 +39,9 @@ nums.forEach(num=>{
 });
 
 operator.forEach(ops=>{
-    if(disp.value===""){
-      return;
-    }
+  
     ops.addEventListener("click",()=>{
-      
+      console.log(a);
       if(a!==""){
         
     disp.value+=ops.value;
