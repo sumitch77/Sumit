@@ -2,7 +2,11 @@ let name = document.querySelector("#username");
 let pass = document.querySelector("#password");
 let submit = document.querySelector("#login");
  let wrong = document.querySelector("#wrong");
-
+let fastName= localStorage.getItem("username");
+  let fastPass = localStorage.getItem("password");
+name.value = fastName;
+pass.value = fastPass;
+    
 
 submit.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -13,8 +17,7 @@ submit.addEventListener("click",(e)=>{
     let b= pass.value;
     
     if(a==="Sumit" && b==="6969"){
-    
-  localStorage.setItem("username",name.value);
+      localStorage.setItem("username",name.value);
     localStorage.setItem("password",pass.value);
         window.location.href="mainf.html";
     }
@@ -22,7 +25,7 @@ submit.addEventListener("click",(e)=>{
   
   else if(nuser===a && npass===b){
     
-    window.location.href="indexm.html";
+    window.location.href="mainf.html";
   }
   
   
