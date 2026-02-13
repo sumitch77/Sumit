@@ -126,9 +126,12 @@ function fail(){
     cit.innerText = "Please allow Location OR type your city manually"
 }
 async function pass(position){
-    
+    auto.disabled = true;
   const aa =  position.coords.latitude;
  const  bb =  position.coords.longitude;
+  setTimeout(async()=>{
+    
+  
     let result = await call2(aa,bb)
   let calk = {
   pm2_5:  result.current.air_quality.pm2_5,
@@ -140,9 +143,9 @@ async function pass(position){
 }
     let finaq =  calculate(calk);
       
-    cit.innerText = "Your city : "+ result.location.name;
-    coun.innerText = "your country : "+ result.location.country;
-    time.innerText = "local time  : " + result.location.localtime;
+    cit.innerText = "City : "+ result.location.name;
+    coun.innerText = "Country : "+ result.location.country;
+    time.innerText = "Local time  : " + result.location.localtime;
     temc.innerText = "Temperature in °C : " + result.current.temp_c + "°C";
     temf.innerText= "Temperature in °F : " + result.current.temp_f + "°F";
     atmos.innerText = "Atmosohere : " + result.current.condition.text ;
@@ -150,7 +153,12 @@ async function pass(position){
     airq.innerText = "Air quality index : " + finaq;
     humid.innerText = "Humidity : " + result.current.humidity+ "%";
     wind.innerText = "Wind speed : " + result.current.wind_kph + "Km/h";
-    
+    alldata.style.display = "block";
+  },100)
+  
+  setTimeout(()=>{
+    auto.disabled = false;
+  },5000)
     
 }
 
@@ -161,15 +169,17 @@ navigator.geolocation.getCurrentPosition(pass,fail);
 });
 let city2 = "";
 getlo.addEventListener("click",async()=>{
-    
+    getlo.disabled = true;
     city2 = city.value;
+  alldata.style.display = "block";
     if(city.value ==="delhi"||city.value ==="Delhi"|| city.value === "DELHI"){
         city2 = "new delhi";
     }
     else{
         city2 = city.value;
     }
-    
+    setTimeout(async()=>{
+      
     try {
     let result = await call(city2);
       
@@ -183,9 +193,9 @@ getlo.addEventListener("click",async()=>{
 }
     let finaq =  calculate(calk);
       
-   cit.innerText = "Your city : "+ result.location.name;
-    coun.innerText = "your country : "+ result.location.country;
-    time.innerText = "local time  : " + result.location.localtime;
+   cit.innerText = "City : "+ result.location.name;
+    coun.innerText = "Country : "+ result.location.country;
+    time.innerText = "ocal time  : " + result.location.localtime;
     temc.innerText = "Temperature in °C : " + result.current.temp_c + "°C";
     temf.innerText= "Temperature in °F : " + result.current.temp_f + "°F";
     atmos.innerText = "Atmosohere : "+ result.current.condition.text;
@@ -196,13 +206,19 @@ getlo.addEventListener("click",async()=>{
     } catch (e){
         cit.innerText = "please check your city spelling or use our automatic live location option ";
     }
+       },100)
+  
+  setTimeout(()=>{
+    getlo.disabled = false;
+  },5000)
 });
 
 
 man.addEventListener("click",()=>{
+  
   city.style.display = "block";
   getlo.style.display= "block";
-  ent.style.display = "block";
+  
   nok.style.display = "none";
   man.style.display = "none";
   

@@ -1,72 +1,136 @@
-
-h1{
-  font-size: 100px;
-  color: #ffffff;
-  position : relative;
-  left : 400px;
-  opacity: 0.6;
-  align-self: center;
+/* General Page Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  
+  /* Flexbox for Horizontal Centering only */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  
+  /* Removed 'justify-content: center' so it starts at the top */
+  min-height: 100vh;
+  margin: 0;
+  
+  /* Adds space at the very top so the Heading doesn't touch the edge */
+  padding-top: 60px; 
+  color: #333;
 }
-#img{
-  position : absolute;
-  top:0px;
-  left:0px;
-  z-index: -1;
-  height: 2900px;
-  width:1500px;
+
+/* Typography */
+h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin: 0 0 40px 0; /* Zero top margin, 40px bottom margin */
+  text-align: center;
 }
 
-#auto{
-  font-size: 65px;
-  position : relative;
-  left : 50px;
-  background-color: #1f7aff;
-  color:white;
+p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #fff; /* Changed to white for better visibility on blue */
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Input Field Styling */
+#city {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 250px;
+  outline: none;
+  display: none;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 10px auto; /* Centered */
+}
+
+#city:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
   display: block;
+  margin: 15px auto; /* Spacing between buttons */
+  width: 280px;
 }
 
-#nok{
-  font-size: 65px;
-  position : relative;
-  left : 50px;
-  color: #ffffff;
+button:active {
+  transform: scale(0.98);
+}
+
+/* Specific Button Colors */
+#auto {
+  background-color: #fff;
+  color: #007bff;
+  width:30rem;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#man {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+  border: 2px solid #fff;
+  width:30rem;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #007bff;
   
 }
-#ent{
-  
-  font-size: 70px;
-  position : relative;
-  left : 50px;
-  color : #ffffff;
-  display: none;
-  background-image: rgba(0, 0, 0, 0.55);
-  
-}
 
-#city{
-  font-size: 65px;
-  position : relative;
-  left : 50px;
-  background-color: azure;
-  display: none;
-}
-
-#getlo{
-  font-size: 65px;
-  position : relative;
-  left : 50px;
-  background-color: aliceblue;
-  display: none;
-}
-#man{
-  font-size: 65px;
-  position : relative;
-  left : 50px;
-  background-color: #1f7aff;
-  color:white;
-}
-
-#alldata{
-  font-size: 65px;
+#getlo {
+  background-color: #28a745;
   color: white;
+  width:15rem;
+  font-size: 2rem;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+#getlo:hover {
+  background-color: #218838;
+}
+
+/* Helper Text Styling */
+#nok, #ent {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* Results Section */
+#alldata {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 40px;
+  width: 500px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  display: none; /* Remember to change this via JS */
+  text-align: center;
+}
+
+#alldata p {
+  color: #333; /* Dark text inside the white box */
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 2rem;
+}
+
+#alldata p:last-child {
+  border-bottom: none;
 }
