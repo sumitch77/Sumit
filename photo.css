@@ -49,7 +49,9 @@ h1 {
 #but:hover {
   background-color: #0056b3;
 }
-
+#err{
+  font-size: 30px;
+}
 
 #photo {
   display: grid;

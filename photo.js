@@ -7,29 +7,35 @@ const model = document.querySelector("#imageModal");
 const fullimg = document.querySelector("#fullm");
 const imgall = document.querySelectorAll(".newimg");
 const close = document.querySelector("#clo");
+    const erro = document.querySelector("#err");
         
 let userinp = "";
 but.addEventListener('click',async ()=>{
-    but.disabled = true;
+   // but.disabled = true;
+    but.style.opacity = 0.7;
     userinp = inp.value;
     
     let newdata = await call();
+    displayImages(newdata.results);
+   
     
-   displayImages(newdata.results);
-    setTimeout(()=>{
-        but.disabled = false;
-    },10000)
     
 });
 
 
 async function call (){
     
-const data = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${userinp}&order_by=relevant
-&per_page=30&client_id=q9mg6K13E89Pl1MAR0jS4um5B1jOH93A1gW1xohiKjg`);
-    return data.json();
-    
+return await fetch(`https://api.unsplash.com/search/photos?page=1&query=${userinp}&order_by=relevant
+&per_page=30&client_id=q9mg6K13E89Pl1MAR0jS4um5B1jOH93A1gW1xohiKjg`)
+     .then(data => {
+      return data.json();
+    })
+    .catch(error => {
+      err.innerText = "Unable to get Images";
+    });
 }
+    
+
 
 function displayImages(newdata) {
     
@@ -40,7 +46,7 @@ function displayImages(newdata) {
         img.src = photo.urls.regular;
         img.alt = photo.alt_description || "Unsplash Image";
         img.classList.add("newimg");
-        
+        err.innerText = "";
         gallery.appendChild(img);
         
     
