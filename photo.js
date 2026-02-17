@@ -7,19 +7,19 @@ const model = document.querySelector("#imageModal");
 const fullimg = document.querySelector("#fullm");
 const imgall = document.querySelectorAll(".newimg");
 const close = document.querySelector("#clo");
-    const erro = document.querySelector("#err");
-        
+const erro = document.querySelector("#err");
+const down = document.querySelector("#down");
+const download = document.querySelector("#downlo");
+      
 let userinp = "";
 but.addEventListener('click',async ()=>{
    // but.disabled = true;
-    but.style.opacity = 0.7;
+    
     userinp = inp.value;
     
     let newdata = await call();
     displayImages(newdata.results);
    
-    
-    
 });
 
 
@@ -43,25 +43,33 @@ function displayImages(newdata) {
 
     newdata.forEach(photo => {
         const img = document.createElement("img");
+       
         img.src = photo.urls.regular;
+       
         img.alt = photo.alt_description || "Unsplash Image";
         img.classList.add("newimg");
+       
         err.innerText = "";
         gallery.appendChild(img);
         
     
     img.addEventListener("click",()=>{
      model.style.display = "block";
-        
         fullimg.src = img.src;
-    
-});
+       
+        });
         close.addEventListener("click",()=>{
           model.style.display = "none";
             
         });
         
-        
+        down.addEventListener("click",()=>{
+           download.href = fullimg.src;
+           
+           
+        });
+       
     });
 }
+
 
