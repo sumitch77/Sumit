@@ -1,0 +1,201 @@
+/* General Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  /* Deep charcoal background for better eye comfort than pure black */
+  background-color: #121212; 
+  color: #e0e0e0;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header & Search Section */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#search {
+  width: 100%;
+  padding: 12px 20px;
+  /* Darker input with light border */
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 25px;
+  font-size: 1.4rem;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#search:focus {
+  border-color: #ff6b6b;
+  background-color: #252525;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.2);
+}
+
+/* Centering logic for buttons */
+#but, #but2 {
+  width: 20%;
+  padding: 12px;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+#but {
+  position: relative;
+  left: 24rem;
+  margin-top: 15px;
+}
+
+#but2 {
+  display: block;
+  margin: 20px auto; /* Easier centering */
+}
+
+#but:hover, #but2:hover {
+  background-color: #ee5253;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(238, 82, 83, 0.4);
+}
+
+/* Labels */
+#f1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  border-left: 5px solid #ff6b6b;
+  padding-left: 15px;
+  color: #ffffff;
+}
+
+/* Food Items Grid */
+.fooditem {
+  width: calc(20% - 16px);
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: brightness(0.9); /* Blends better with dark mode */
+}
+
+.fooditem:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Country/Cuisine Section */
+.country {
+  width: calc(25.33% - 20px);
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  filter: grayscale(40%) brightness(0.8);
+  transition: all 0.3s ease;
+}
+
+.country:hover {
+  filter: grayscale(0%) brightness(1);
+  transform: translateY(-5px);
+}
+
+/* Output Area (Card Container) */
+#output {
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%; /* Changed from 70rem to be responsive */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #1e1e1e;
+  border-radius: 20px;
+  min-height: 100px;
+  border: 1px dashed #444;
+}
+
+.meal-card {
+  width: calc(50% - 20px); /* Sets two cards per row with gap */
+  background: #252525;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b6b; 
+}
+
+
+@media (max-width: 768px) {
+  .meal-card {
+    width: 100%;
+  }
+}
+
+/* Individual Recipe Cards */
+.card {
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.card-header, .card-header1 {
+  background: #2d2d2d;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.ingredient-item {
+  font-size: 1.8rem; /* Adjusted for readability */
+  padding: 8px;
+  background: #333; /* Darker ingredient tabs */
+  color: #ff6b6b; /* Accent color for text */
+  border-radius: 6px;
+  text-align: center;
+}
+
+.instructions {
+  line-height: 2.0;
+  font-size: 1.6rem;
+  color: #bbb;
+  padding: 20px;
+}
+
+#newhead, #newhead2 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+#err{
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  #but { left: 0; width: 100%; }
+  .fooditem, .country { width: calc(50% - 20px); }
+  #output { width: 100%; }
+}
